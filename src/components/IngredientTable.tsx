@@ -6,7 +6,7 @@ import { HTMLTable } from "./tableSetup/HTMLTableSetUp";
 import { handleSettingNewIngredient as HandleSettingNewIngredient } from "./handlers/HandleIgredientsChange";
 import { Ingredient } from "./IngredientPattern/IngredientPatternInterface";
 
-const IngredientTable: React.FC = () => {
+export const IngredientTable: React.FC = () => {
   const [ingredients, setIngredients] = useState<Ingredient[]>([]); //dlaczego tutaj są dwa useState???
   const [newIngredient, setNewIngredient] = useState<Ingredient>({
     name: "",
